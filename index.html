@@ -537,38 +537,40 @@ body{background:#1E282C}body #terminal{color:#657B83}body #user{color:#C3E88D}bo
 .navFull {
     background-color: #353535;
     font-family: "Courier New";
-    font-size: 17px;
+    font-size: 2em;
     display: inline;
-    position: fixed;
+    position: absolute;
     bottom: 0px;
-    left: 0px;
+    left: 0px;        
     width: 100%;
     padding-top: 5px;
     padding: 10px;
-    padding-bottom: 0px;
+    padding-bottom: 5%;
 }
 .navSocial {
     background-color: #353535;
     font-family: "Courier New";
-    font-size: 17px;
+    font-size: 2em;
     display: inline;
-    position: fixed;
+    position: absolute;
     bottom: 0px;
-    left: 40%;
+    left: 35%;
+    right: 35%;        
     width: 100%;
     padding-top: 5px;
     padding: 10px;
-    padding-bottom: 0px;
+    padding-bottom: 5%;
 }
 .navHomeSocial {
     background-color: #1e282c;
     font-family: "Courier New";
-    font-size: 17px;
+    font-size: 1.5em;
     display: inline;
     position: fixed;
     bottom: 0px;
     left: 40%;
-    width: 100%;
+    right:40%;
+    width: auto;
     padding-top: 5px;
     padding: 10px;
     padding-bottom: 5%;
@@ -689,9 +691,9 @@ body{background:#1E282C}body #terminal{color:#657B83}body #user{color:#C3E88D}bo
     const typeeffetct = async () => {
         await typewriter("\u003cstrong\u003e\u003cspan id=\u0027user\u0027\u003enikos.fotiou@m-5\u003c\/span\u003e\u003cspan id=\u0027terminal\u0027\u003e:\u003c\/span\u003e\u003cspan id=\u0027dir\u0027\u003e~\/\u003c\/span\u003e\u003c\/strong\u003e\u003cspan id=\u0027terminal\u0027\u003e$\u003c\/span\u003e", "ps1_01", ps1Delay); await typewriter("\u003cspan id=\u0027terminal\u0027\u003ecd introduction\u003c\/span\u003e", "cd", commandDelay);
         await typewriter("\u003cstrong\u003e\u003cspan id=\u0027user\u0027\u003enikos.fotiou@m-5\u003c\/span\u003e\u003cspan id=\u0027terminal\u0027\u003e:\u003c\/span\u003e\u003cspan id=\u0027dir\u0027\u003e~\/introduction\u003c\/span\u003e\u003c\/strong\u003e\u003cspan id=\u0027terminal\u0027\u003e$\u003c\/span\u003e", "ps1_02", ps1Delay); await typewriter("\u003cspan id=terminal\u003ecat profile.txt\u003c\/span\u003e", "cat", commandDelay);
-        await typewriter("\u003cspan id=\u0027terminal\u0027\u003e  Hi, I am Nikos Fotiou!\u003cbr\u003e  I am a DevOps Engineer, passionate for bleeding edge tech and science.\u003cbr\u003e  I am an Electrical and Computer Engineer (M. Eng.), graduate of NTUA.\u003cbr\u003e  But \u0022Space, (is) the final frontier\u0022,so I am also a postgrad at \u003cbr\u003e  \u0022Space Technologies Applications and Services\u0022, NKUA.\u003cbr\u003e\u003cbr\u003e  I like coding inventions in Go, Python, exploring Kubernetes and\u003cbr\u003e  cloud computing in general, creating tools, automations and new\u003cbr\u003e  architectural patterns.\u003cbr\u003e\u003cbr\u003e  It\u0027s not all code so I like having fun, playing ball in my hood,\u003cbr\u003e  hiking the mountains and I also like martial arts and vibey music.\n  \u003c\/span\u003e", "std_out_01", stdoutDelay);
-        await typewriter("\u003cstrong\u003e\u003cspan id=\u0027user\u0027\u003enikos.fotiou@m-5\u003c\/span\u003e\u003cspan id=\u0027terminal\u0027\u003e:\u003c\/span\u003e\u003cspan id=\u0027dir\u0027\u003e~\/introduction\u003c\/span\u003e\u003c\/strong\u003e\u003cspan id=\u0027terminal\u0027\u003e$\u003c\/span\u003e", "ps1_03", ps1Delay); await typewriter("\u003cspan id=\u0027terminal\u0027\u003etree .\/my_projects_and_more\/\u003c\/span\u003e", "tree", commandDelay);
-        await typewriter("\u003cspan id=\u0027terminal\u0027\u003e\u003cstrong\u003e\u003cspan id=\u0027dir\u0027\u003e.\/my_projects_and_more\/\u003c\/span\u003e\u003c\/strong\u003e\u003cbr\u003e└── \u003ca href=\u0027https:\/\/nikfot.github.io\/freshgo\/\u0027\u003efreshgo\u003c\/a\u003e\u003c\/span\u003e", "std_out_02", stdoutDelay);
+        await typewriter("\u003cspan id=\u0027terminal\u0027\u003e  Hi, I am Nikos Fotiou!\u003cbr\u003e  I am a DevOps Engineer, passionate for \u003cbr\u003e  bleeding edge tech and science.\u003cbr\u003e  I am an Electrical and Computer Engineer (M. Eng.), \u003cbr\u003e  graduate of NTUA.\u003cbr\u003e  But \u0022Space, (is) the final frontier\u0022,\u003cbr\u003e  so I am also a postgrad at \u003cbr\u003e  \u0022Space Technologies Applications and Services\u0022, NKUA.\u003cbr\u003e\u003cbr\u003e  I like coding inventions in Go, Python,\u003cbr\u003e  exploring Kubernetes and cloud computing in general,\u003cbr\u003e  creating tools, automations \u003cbr\u003e  and new  architectural patterns.\u003cbr\u003e\u003cbr\u003e  It\u0027s not all code so I like having fun,\u003cbr\u003e  playing ball in my hood,\u003cbr\u003e  hiking the mountains \u003cbr\u003e  and I also like martial arts and vibey music.\n  \u003c\/span\u003e", "std_out_01", stdoutDelay);
+        await typewriter("\u003cstrong\u003e\u003cspan id=\u0027user\u0027\u003enikos.fotiou@m-5\u003c\/span\u003e\u003cspan id=\u0027terminal\u0027\u003e:\u003c\/span\u003e\u003cspan id=\u0027dir\u0027\u003e~\/introduction\u003c\/span\u003e\u003c\/strong\u003e\u003cspan id=\u0027terminal\u0027\u003e$\u003c\/span\u003e", "ps1_03", ps1Delay); await typewriter("\u003cspan id=\u0027terminal\u0027\u003etree .\/my_stuff\/\u003c\/span\u003e", "tree", commandDelay);
+        await typewriter("\u003cspan id=\u0027terminal\u0027\u003e\u003cstrong\u003e\u003cspan id=\u0027dir\u0027\u003e.\/my_stuff\/\u003c\/span\u003e\u003c\/strong\u003e\u003cbr\u003e└── \u003ca href=\u0027https:\/\/nikfot.github.io\/freshgo\/\u0027\u003efreshgo\u003c\/a\u003e\u003c\/span\u003e", "std_out_02", stdoutDelay);
         await typewriter("\u003cstrong\u003e\u003cspan id=\u0027user\u0027\u003enikos.fotiou@m-5\u003c\/span\u003e\u003cspan id=\u0027terminal\u0027\u003e:\u003c\/span\u003e\u003cspan id=\u0027dir\u0027\u003e~\/introduction\u003c\/span\u003e\u003c\/strong\u003e\u003cspan id=\u0027terminal\u0027\u003e$\u003c\/span\u003e", "ps1_04", ps1Delay);
         return;
     }
@@ -706,13 +708,10 @@ body{background:#1E282C}body #terminal{color:#657B83}body #user{color:#C3E88D}bo
     
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <span>
-    <a href="https://github.com/nikfot" class="fa fa-github" style="font-size:2vw;text-decoration: none;"></a>
-    <span>&#8192; &#8192;</span>
-    <a href="https://twitter.com/workaround18" class="fa fa-twitter" style="font-size:2vw;text-decoration: none;"></a>
-    <span>&#8192; &#8192;</span>
-    <a href="mailto:nik_fot@hotmail.gr?subject=Contact from nikfot.github.io" target="_blank" class="fa fa-envelope" style="font-size:2vw;text-decoration: none;"></a>
-    <span>&#8192; &#8192;</span>
-    <a href="https://www.linkedin.com/in/nikosfotiou/" target="_blank" class="fa fa-linkedin" style="font-size:2vw;text-decoration: none;"></a>
+    <a href="https://github.com/nikfot" class="fa fa-github" style="text-decoration: none;"></a>
+    <a href="https://twitter.com/workaround18" class="fa fa-twitter" style="text-decoration: none;"></a>
+    <a href="mailto:nik_fot@hotmail.gr?subject=Contact from nikfot.github.io" target="_blank" class="fa fa-envelope" style="text-decoration: none;"></a>
+    <a href="https://www.linkedin.com/in/nikosfotiou/" target="_blank" class="fa fa-linkedin" style="text-decoration: none;"></a>
 </span>
 
 </span>
